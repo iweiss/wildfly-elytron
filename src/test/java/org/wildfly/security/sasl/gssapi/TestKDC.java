@@ -180,6 +180,7 @@ public class TestKDC {
         try {
             kdcServer.start();
             this.kdcServer = kdcServer;
+            log.debug("KDC Server: " + kdcServer);
         } catch (IOException | LdapInvalidDnException e) {
             throw new IllegalStateException("Unable to start KDC", e);
         }
